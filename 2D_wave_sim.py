@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
+from matplotlib.animation import FuncAnimation
 
 size = 100 #grid size
 t = 100 #time total
@@ -11,6 +12,9 @@ x = np.linspace(0, 1, size)
 y = np.linspace(0, 1, size)
 z = np.random.rand(size, size)
 X, Y = np.meshgrid(x, y)
+
+#set up initial conditions
+u = np.exp
 
 
 fig = plt.figure()
